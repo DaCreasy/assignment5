@@ -10,7 +10,7 @@ def main():
     with open(fileout, 'w+') as tar:
         with open(filein) as src:
             for line in src:
-                punctuations = '''!()-[]{};:’'"\,<>./?@#$%^&*_~'''
+                punctuations = '''!()-[]{};:’'“”"\,<>./?@#$%^& *—_~'''
                 no_punct = ""
                 for char in line:
                    if char not in punctuations:
